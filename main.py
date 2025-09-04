@@ -1,14 +1,4 @@
-import pygame
+from game import Game
 
-pygame.init()
-screen = pygame.display.set_mode((400, 300))
-pygame.display.set_caption("Hello World!")
-
-running = True
-while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            print("Game quit.")
-            running = False
-
-pygame.quit()
+if __name__ == "__main__":
+    Game().run()
